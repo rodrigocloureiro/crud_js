@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>CRUD</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="content_area">
+
+      <h1>CRUD - Create, Read, Update, Delete</h1>
+    
+      <form>
+    
+        <div>
+          <label>Insira o nome do cliente</label>
+          <input type="text" id="name" placeholder="Nome do cliente" required />
+        </div>
+      
+        <div class="sale_area">
+          <label>Insira o valor da venda</label>
+          <span class="currency_symbol">R$</span>
+          <input type="number" id="value"  placeholder="Valor da venda R$" required />
+        </div>
+    
+        <div>
+          <button id="add_sale" class="add_sale">Adicionar Venda</button>
+          <button id="edit_sale" class="edit_sale hide">Confirmar Edição</button>
+        </div>
+    
+      </form>
+    
+      <h2>Vendas</h2>
+    
+      <ul id="sales"></ul>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
